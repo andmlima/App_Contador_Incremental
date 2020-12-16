@@ -53,11 +53,11 @@ $ docker ps
 ```
 Podemos acessar então nossa aplicação nas portas 80 e 8080 no ip da nossa instância.
 ```sh
-http://localhost:8080/
+$ http://localhost:8080/
 ```  
-Iremos acessar a api em /redis para nos certificar que está tudo ok, e depois iremos limpar todos os containers e volumes.
+Iremos acessar a api em /redis varias vezes para nos certificar que está incrementando.
 ```sh
-http://localhost:8080/redis
+$ http://localhost:8080/redis
 ```
 
 
