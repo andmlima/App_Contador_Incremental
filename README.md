@@ -1,5 +1,5 @@
 # App_Contador_Incremental
-That application has Node, database Redis and Ngnix. Aplicação tem um contador de acessos.
+Contador de acesso. Aplicação utiliza Nodejs, banco de dados Redis e Ngnix.
 
 ### Building aplication
 ## Prerequirement
