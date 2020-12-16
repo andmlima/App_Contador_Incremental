@@ -1,5 +1,5 @@
 # App_Contador_Incremental
-That application has Node, database Redis and Ngnix
+That application has Node, database Redis and Ngnix. Aplicação tem um contador de acessos.
 
 ### Building aplication
 ## Prerequirement
@@ -55,7 +55,7 @@ Podemos acessar então nossa aplicação nas portas 80 e 8080 no ip da nossa ins
 ```sh
 $ http://localhost:8080/
 ```  
-Iremos acessar a api em /redis varias vezes para nos certificar que está incrementando.
+Iremos acessar a api em /redis varias vezes para validar o contador de acessos.
 ```sh
 $ http://localhost:8080/redis
 ```
