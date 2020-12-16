@@ -25,7 +25,7 @@ $ docker logs redis
 ```
 Com isso temos o container do Redis rodando na porta 6379.
 
-#### Container=NODE
+#### Container=NODEJS
 Iremos fazer o build do container do NodeJs, que contém a nossa aplicação.
 ```sh
 $ cd ../node
@@ -52,10 +52,13 @@ $ docker run -d --name nginx -p 80:80 --link node andmlima/nginx:devops
 $ docker ps
 ```
 Podemos acessar então nossa aplicação nas portas 80 e 8080 no ip da nossa instância.
-  http://localhost:8080/
+```sh
+http://localhost:8080/
+```  
 Iremos acessar a api em /redis para nos certificar que está tudo ok, e depois iremos limpar todos os containers e volumes.
-  http://localhost:8080/redis
-
+```sh
+http://localhost:8080/redis
+```
 
 
 
