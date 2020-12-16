@@ -7,9 +7,10 @@ Docker installed
 
 ## Download o código fonte
 ````
- mkdir /path/
- cd /path/
- git clone https://github.com/andmlima/App_Contador_Incremental
+$ mkdir /path/
+$ cd /path/
+$ git clone https://github.com/andmlima/App_Contador_Incremental
+$ cd App_Contador_Incremental
 ````
 #### Container=REDIS
  Redis é um banco de dados não relacional
@@ -51,10 +52,9 @@ $ docker run -d --name nginx -p 80:80 --link node andmlima/nginx:devops
 $ docker ps
 ```
 Podemos acessar então nossa aplicação nas portas 80 e 8080 no ip da nossa instância.
-http://localhost:8080/
-
+  http://localhost:8080/
 Iremos acessar a api em /redis para nos certificar que está tudo ok, e depois iremos limpar todos os containers e volumes.
-http://localhost:8080/redis
+  http://localhost:8080/redis
 
 
 
