@@ -1,3 +1,5 @@
+##Subindo aplicação usando as imagens do Docker Hub
+
 docker pull andmlima/nginx:devops
 docker pull andmlima/node:devops
 docker pull andmlima/redis:devops
