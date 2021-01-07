@@ -1,0 +1,18 @@
+docker pull andmlima/nginx:devops
+docker pull andmlima/node:devops
+docker pull andmlima/redis:devops
+
+docker run -d --name redis -p 6379:6379 andmlima/redis:devops
+docker ps
+docker logs redis
+
+docker run -d --name node -p 8080:8080 --link redis andmlima/node:devops
+docker ps 
+docker logs node
+
+docker run -d --name nginx -p 80:80 --link node andmlima/nginx:devops
+docker ps
+
+http://localhost:8080/
+http://localhost:8080/redis
+
