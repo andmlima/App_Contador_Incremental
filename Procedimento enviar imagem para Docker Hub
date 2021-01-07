@@ -1,0 +1,11 @@
+Enviar as imagens para o Docker Hub
+
+docker image ls
+docker tag <TAG> andmlima/redis
+docker push andmlima/redis:devops
+
+docker tag <TAG> andmlima/node
+docker push andmlima/node:devops
+
+docker tag <TAG> andmlima/nginx
+docker push andmlima/nginx:devops
